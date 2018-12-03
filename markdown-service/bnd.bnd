@@ -1,0 +1,12 @@
+Bundle-Name: markdown-service
+Bundle-SymbolicName: com.liferay.demo.markdown.service
+Bundle-Version: 1.0.0
+
+Export-Package:\
+    com.liferay.demo.markdown.service*
+
+Import-Package:\
+    !org.apache.avalon.framework.logger,\
+    !org.apache.log,\
+    !org.bouncycastle.*,\
+    *

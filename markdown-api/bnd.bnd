@@ -1,0 +1,5 @@
+Bundle-Name: markdown-api
+Bundle-SymbolicName: com.liferay.demo.markdown.api
+Bundle-Version: 1.0.0
+
+Export-Package: com.liferay.demo.markdown.api
