@@ -10,6 +10,13 @@ I've create a simple service using com.vladsch.flexmark.
     <#assign markdownService = serviceLocator.findService("com.liferay.demo.markdown.api.MarkdownService") />
     ${markdownService.basicrenderer("*Gladiators* from the **past**")}
     ```
-4. Add an asset publisher to a page and use the ADT to display
-5. If it shows '_Gladiators_ from the **past**' you know it's working you can start using it.
-   E.g. in webcontent templates
+1. Add an asset publisher to a page and use the ADT to display
+1. If it shows '_Gladiators_ from the **past**' you know it's working and can start using it.
+   E.g. in webcontent templates like
+   
+   ```
+   <!-- example Webcontent item with a field 'Content' -->
+   
+   <#assign markdownService = serviceLocator.findService("com.liferay.demo.markdown.api.MarkdownService") /> 
+   ${markdownService.basicrenderer(Content.getData())}
+   ```
