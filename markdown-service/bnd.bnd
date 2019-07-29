@@ -9,4 +9,5 @@ Import-Package:\
     !org.apache.avalon.framework.logger,\
     !org.apache.log,\
     !org.bouncycastle.*,\
+    !sun.java2d.cmm.kcms,\
     *

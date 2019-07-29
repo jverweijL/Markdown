@@ -1,8 +1,8 @@
 package com.liferay.demo.markdown.service;
 
 import com.liferay.demo.markdown.api.MarkdownService;
-import com.vladsch.flexmark.util.options.MutableDataSet;
-import com.vladsch.flexmark.ast.Node;
+import com.vladsch.flexmark.util.data.MutableDataSet;
+import com.vladsch.flexmark.util.ast.Node;
 import com.vladsch.flexmark.html.HtmlRenderer;
 import com.vladsch.flexmark.parser.Parser;
 
@@ -27,7 +27,7 @@ public class MarkdownServiceImpl implements MarkdownService {
 		//options.set(Parser.EXTENSIONS, Arrays.asList(TablesExtension.create(), StrikethroughExtension.create()));
 
 		// uncomment to convert soft-breaks to hard breaks
-		//options.set(HtmlRenderer.SOFT_BREAK, "<br />\n");
+		options.set(HtmlRenderer.SOFT_BREAK, "<br />\n");
 
 		Parser parser = Parser.builder(options).build();
 		HtmlRenderer renderer = HtmlRenderer.builder(options).build();
