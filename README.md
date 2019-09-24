@@ -25,6 +25,6 @@ I've create a simple service using com.vladsch.flexmark.
    <#assign markdownService = serviceLocator.findService("com.liferay.demo.markdown.api.MarkdownService") /> 
    ${markdownService.basicrenderer(Content.getData())}
    ```
-   [video](markdown.mp4)
+   [video](markdown.mp4)  
    ![demo](markdown.gif "screenshot")
    
