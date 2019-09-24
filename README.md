@@ -26,4 +26,4 @@ I've create a simple service using com.vladsch.flexmark.
    ${markdownService.basicrenderer(Content.getData())}
    ```
    
-   [![demo](Selection_075.png "screenshot")](markdown.mp4)
+   [![demo](screenshot.png "screenshot")](markdown.mp4)
