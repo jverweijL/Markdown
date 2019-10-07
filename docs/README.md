@@ -1,5 +1,6 @@
 
 # Markdown with com.vladsch.flexmark
+This module can be used to transform markdown into html with Liferay 7 / Liferay DXP.
 
 ## Static Example
 This is an example to use markdown with Liferay.
