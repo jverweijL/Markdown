@@ -15,8 +15,8 @@ I've create a simple service using com.vladsch.flexmark.
 1. Add an asset publisher to a page and use the ADT to display
 1. If it shows '_Gladiators_ from the **past**' you know it's working and can start using it.
    
-   
- ## Dynamic example using content structure and template
+ ## Dynamic Example
+ ### Using a content structure and template
  
  Example webcontent template
    
