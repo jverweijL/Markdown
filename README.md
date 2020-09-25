@@ -1,1 +1,1 @@
-[official documentation pages](https://jverweijl.github.io/Markdown/)   
+[official documentation pages](https://jverweijl.github.io/Markdown/)
