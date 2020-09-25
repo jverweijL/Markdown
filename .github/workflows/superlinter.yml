@@ -13,13 +13,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # DevSkim is security linter that highlights common security issues in source code.
+      # The DevSkim GitHub Action outputs a sarif file compatible with GitHub's Security Issues view.
+      - name: DevSkim
+        uses: microsoft/DevSkim-Action@v1
+
       # Checks out a copy of your repository on the ubuntu-latest machine
-      - name: Checkout code
-        uses: actions/checkout@v2
+      #- name: Checkout code
+      #  uses: actions/checkout@v2
 
       # Runs the Super-Linter action
-      - name: Run Super-Linter
-        uses: github/super-linter@v3
+      #- name: Run Super-Linter
+      #  uses: github/super-linter@v3
         env:
           DEFAULT_BRANCH: master
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
