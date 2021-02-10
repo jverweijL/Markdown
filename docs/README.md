@@ -1,15 +1,14 @@
 # Markdown with com.vladsch.flexmark
 This module can be used to transform markdown into html with Liferay 7 / Liferay DXP.
+Make sure to deploy api, service and contextcontributor.
 
 ## Static Example
 This is an example to use markdown with Liferay.
 I've create a simple service using com.vladsch.flexmark.
 
 1. Build and deploy the api and the service
-1. Make sure 'serviceLocator' is not a restricted class in System Settings / Template Engines / Freemarker Engine
 1. Write an ADT with the following contents:
     ```
-    <#assign markdownService = serviceLocator.findService("com.liferay.demo.markdown.api.MarkdownService") />
      ${markdownService.basicrenderer("*Gladiators* from the **past**")}
     ```
 1. Add an asset publisher to a page and use the ADT to display
@@ -21,9 +20,7 @@ I've create a simple service using com.vladsch.flexmark.
 Example webcontent template
    
 ```
-<!-- example Webcontent item with a field 'Content' -->
-   
-<#assign markdownService = serviceLocator.findService("com.liferay.demo.markdown.api.MarkdownService") /> 
+<!-- example Webcontent item with a field 'Content' --> 
 ${markdownService.basicrenderer(Content.getData())}
 ```
 [video](markdown.mp4)  
