@@ -1,0 +1,5 @@
+Bundle-Name: MarkdownTemplateContextContributor
+Bundle-SymbolicName: markdowntemplatecontextcontributor
+Bundle-Version: 1.0.0
+Liferay-Theme-Contributor-Type: TemplateContextContributor
+Web-ContextPath: /TemplateContextContributor-theme-contributor
